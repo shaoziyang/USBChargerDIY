@@ -30,6 +30,9 @@ PCB设计使用了立创EDA软件，单片机程序使用 micropython 开发。
 
 ## 相关链接
 
+- 项目网址：
+    - [github](https://github.com/shaoziyang/USBChargerDIY)
+    - [gitee](https://gitee.com/shaoziyang/usb-charger-diy)
 - [EEWorld活动贴](https://bbs.eeworld.com.cn/search.php?mod=forum&api=yes&searchsubmit=yes&kw=%A1%BEUSB%B3%E4%B5%E7%C6%F7DIY%A1%BF)
 - [立创EDA设计文件](https://oshwhub.com/shao.ziyang/USB_Charge_DIY_V2)
 - [物料选项表【腾讯文档】](https://docs.qq.com/sheet/DZXRCeWhxc0VWbFZu)
