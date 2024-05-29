@@ -7,6 +7,53 @@
 
 USB charger DIY, using fast charging module, detects charging voltage, current, power, temperature, capacity etc. Programming with micropython.
 
+This project is to provide a reference prototype, you can add or delete functions according to your own ideas to DIY more interesting projects.
+
+PCB design using the software of LICAD, the microcontroller program using micropython.
+
+<font color=red>**Please pay attention to safety during DIY due to the presence of 220V voltage.**</font>
+
+## Components
+
+- **Fast charging module**. 
+- **MCU**, ESP32S2 mini development board. 
+- **Current sensor**, INA219 module. 
+- **Temperature sensor**, NTC, MF58 thermistor (3950, 10K). 
+- **OLED**, 128x32, I2C interface. 
+- **Power supply**, DC/5V module. 
+- **Buzzer**, Passive buzzer. 
+- **Photoresistor**, optional. 
+- **LED**, three color co-positive LED.
+
+### cost 
+- Fast charging module: $0.2-$0.5 
+- ESP32S2 mini: $1.5-$2 
+- INA219: $0.7-$0.9 
+- NTC: $0.02 
+- OLED (128x32): $1-$1.2 
+- 5V power module: $0.3-$0.5 
+- buzzer: $0.1 
+- LED: $0.02 
+- Photoresistor: 0.1 yuan 
+- Other: $1-$2 
+
+Total: About $5-$6.
+
+## schematic diagram
+
+![](sch.png)
+
+## Project link: 
+- Project
+    - [github](https://github.com/shaoziyang/USBChargerDIY)
+    - [gitee](https://gitee.com/shaoziyang/usb-charger-diy)
+- [EEWorld activity stickers](https://bbs.eeworld.com.cn/search.php?mod=forum&api=yes&searchsubmit=yes&kw=%A1%BEUSB%B3%E4%B5%E7%C6%F7DIY%A1%BF)
+- [LCEDA Design Documents](https://oshwhub.com/shao.ziyang/USB_Charge_DIY_V2)
+- [Material Selection Table 【 Tencent Document 】](https://docs.qq.com/sheet/DZXRCeWhxc0VWbFZu)
+- [micropython](https://micropython.org)
+
+
+---
 
 ## <a id="chinese"></a>说明
 
@@ -18,6 +65,7 @@ PCB设计使用了立创EDA软件，单片机程序使用 micropython 开发。
 
 <font color=red>**因为存在220V高压，DIY时请注意安全。**</font>
 
+
 ## 主要器件
 
 为了简化DIY的复杂度，主要元件使用了模块，其它元件数量也尽可能少。
@@ -26,7 +74,7 @@ PCB设计使用了立创EDA软件，单片机程序使用 micropython 开发。
 - **MCU**：ESP32S2 mini开发板（可以使用其它型号）。使用ESP32S2，一个是支持micropython；其次因为性价比高，还支持网络，缺点是不支持蓝牙。
 - **电流传感器**：INA219模块。第一版时使用了霍尔型的ACS712电流传感器，第二版改为INA219。
 - **温度传感器**：MF58热敏电阻（3950，10K）。监测充电过程中内部温度，在温度过高时可以提示。
-- **OLED**：128x32，I2接口。
+- **OLED**：128x32，I2C 接口。
 - **电源**：DC/5V模块。用于将快充模块的输出电压转换为5V。部分快充模块输出是高压，部分会动态调整输出电压，因此需要使用一个单独的DC5V模块。如果快充模块带有单独的USB 5V输出口（非快充口），则可以省略此模块。
 - **蜂鸣器**：无源蜂鸣器（注意不要使用有源蜂鸣器）。用于发出提示声音。
 - **光敏电阻**（可选），用于采集环境光线亮度，用于动态调整LED输出亮度，避免晚上时LED太亮刺眼。
