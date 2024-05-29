@@ -1,3 +1,9 @@
+# cfg.py
+#
+#   part of USB Charger DIY project
+#
+#   https://github.com/shaoziyang/USBChargerDIY
+
 from micropython import const
 
 TH_TP1 = const(9000)

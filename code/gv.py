@@ -1,6 +1,8 @@
-# global value
+# global value / function
 #
+#   part of USB Charger DIY project
 #
+#   https://github.com/shaoziyang/USBChargerDIY
 
 from micropython import const
 import asyncio

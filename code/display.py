@@ -1,3 +1,9 @@
+# display.py
+#
+#   part of USB Charger DIY project
+#
+#   https://github.com/shaoziyang/USBChargerDIY
+
 import asyncio
 from gv import gv
 import oled

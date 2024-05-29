@@ -1,3 +1,9 @@
+# task_main.py
+#
+#   part of USB Charger DIY project
+#
+#   https://github.com/shaoziyang/USBChargerDIY
+
 import asyncio
 from gv import gv
 import board
@@ -7,26 +13,6 @@ def selftest():
     
     print('start self testing...')
     result = True
-
-    '''
-    print('\ncheck LEDs')
-    print('  on board blue LED')
-    for i in range(4):
-        board.LED(not board.LED())
-        sleep_ms(100)
-    print('  red LED')
-    for i in range(17):
-        board.pLEDR.duty(223+abs(i-8)*100)
-        sleep_ms(50)
-    print('  green LED')
-    for i in range(17):
-        board.pLEDG.duty(223+abs(i-8)*100)
-        sleep_ms(50)
-    print('  blue LED')
-    for i in range(17):
-        board.pLEDB.duty(223+abs(i-8)*100)
-        sleep_ms(50)
-    '''
 
     print('\ncheck I2C')
     r = board.i2c.scan()

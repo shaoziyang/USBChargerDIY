@@ -1,3 +1,9 @@
+# board.py
+#
+#   part of USB Charger DIY project
+#
+#   https://github.com/shaoziyang/USBChargerDIY
+
 from machine import Pin, PWM, ADC, SoftI2C, TouchPad, RTC
 import pins, cfg
 from time import sleep_ms

@@ -1,3 +1,9 @@
+# pins.py
+#
+#   part of USB Charger DIY project
+#
+#   https://github.com/shaoziyang/USBChargerDIY
+
 from micropython import const
 
 pin_SDA = const(37)
