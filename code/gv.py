@@ -46,7 +46,7 @@ class global_var:
         self.T = board.T()
         self.AL = (self.AL*3 + board.AL())//4
         self.V = board.ina.volt()
-        self.C = board.ina.current()
+        self.C = board.ina.current() if self.V > 1 else 0
 
     # calc power every second
     def calc_power(self):
